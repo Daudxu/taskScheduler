@@ -8,8 +8,8 @@ import base64
 class taskJobModel():
     def __init__(self, name):
         self.name = name
-        self.db = pymysql.connect("localhost", "root", "root", "monitor")
-        self.cursor = self.db.cursor()
+        self.db = 1  #pymysql.connect("localhost", "root", "root", "monitor")
+        self.cursor =2 # self.db.cursor()
 
     def bark(self):
         print(self.name + " is barking.")
