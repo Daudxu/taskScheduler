@@ -159,15 +159,3 @@ class SendMail(object):
             print('发送成功！')
         self.smtp.quit()
 
-
-# if __name__ == '__main__':
-#     m = SendMail(
-#         username='test@qq.com',
-#         passwd='xxxxxx',
-#         recv=['test001@163.com','test002@qq.com'],
-#         title='发送邮件20180205',
-#         content='测试发送邮件，qq发件，接收方一个是163邮箱，另一个是qq邮箱。20180205',
-#         file=r'E:\\testpy\\python-mpp\\day7\\作业\\data\\mpp.xls',
-#         ssl=True,
-#     )
-#     m.send_mail()
