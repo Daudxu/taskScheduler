@@ -4,10 +4,10 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 def func():
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     taskObj = taskJobModel('husike')
-    # taskObj.bark()
-    res = taskObj.autoCancelOrder()
+    taskObj.bark()
+    # res = taskObj.autoCancelOrder()
     # print('do func  time :',ts)
-    print(res)
+    # print(res)
     print('自动确认发货定时任务-时间:', ts)
     # time.sleep(2)
 
@@ -16,7 +16,6 @@ def func2():
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     print('do func2 time：', ts)
     time.sleep(2)
-
     # 自动取消订单
 
 
